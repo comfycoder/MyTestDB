@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{bbb1f0e8-06ec-4936-91c7-68b6dcac0d6e}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -57,5 +57,13 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Person.sql" />
+    <Build Include="Company.sql" />
+    <Build Include="PersonType.sql" />
+    <Build Include="CompanyType.sql" />
+    <Build Include="spUpsertPerson.sql" />
+    <Build Include="spUpsertCompany.sql" />
   </ItemGroup>
 </Project>
