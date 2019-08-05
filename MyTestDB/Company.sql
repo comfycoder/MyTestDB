@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Company]
 (	
 	[CompanyId] [uniqueidentifier] NOT NULL DEFAULT newid(),
-	[CompanyName] [varchar](30) NOT NULL,
+	[CompanyName] [varchar](50) NOT NULL,
 	[Description] [varchar](1000) NOT NULL,
 	[EmailAddress] [varchar](255) NOT NULL,
 	[StreetAddress] [varchar](50) NOT NULL,

@@ -1,7 +1,7 @@
 ﻿CREATE TYPE [dbo].[CompanyType] AS TABLE
 (
 	[CompanyId] [uniqueidentifier],
-	[CompanyName] [varchar](30),
+	[CompanyName] [varchar](50),
 	[Description] [varchar](1000),
 	[EmailAddress] [varchar](255),
 	[StreetAddress] [varchar](50),
